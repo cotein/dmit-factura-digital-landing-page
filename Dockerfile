@@ -15,6 +15,8 @@ RUN npm install
 # Copy all files
 COPY . .
 
+COPY ./ssl-certificates /etc/letsencrypt
+
 # Build app
 RUN npm run build && npm run generate
 
@@ -31,7 +33,7 @@ COPY ./nginx/default.conf /etc/nginx/conf.d
 COPY --from=build-stage /app/dist /usr/share/nginx/html
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 80 443
 
 # start nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
