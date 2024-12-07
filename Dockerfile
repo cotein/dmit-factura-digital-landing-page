@@ -1,24 +1,37 @@
-# Etapa 1: Construcción de la aplicación Nuxt
-FROM node:20.15.0 as builder
+# Author : Vongkeo KSV
 
-# Establecer el directorio de trabajo
-WORKDIR /usr/src/app
+# Pull the base image 
+FROM node:20.15.0 as build-stage
 
-# Copiar el package.json y el package-lock.json
+# set working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Instalar dependencias
+# Install dependencies
 RUN npm install
 
-# Copiar el código fuente de la aplicación
+# Copy all files
 COPY . .
 
-# Construir la aplicación Nuxt
-RUN npm run build
+# Build app
+RUN npm run build && npm run generate
 
+# nginx state for serving content
+FROM nginx:1.21.1-alpine as production-stage
 
-CMD ["node", ".output/server/index.mjs"]
+# remove the default nginx.conf
+RUN rm -rf /usr/share/nginx/html/*
 
-# Exponer el puerto 3000
-EXPOSE 3000
+# Copy nginx configuration
+COPY ./nginx/default.conf /etc/nginx/conf.d
 
+# Copy static files from build-stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
+
+# start nginx in the foreground
+CMD ["nginx", "-g", "daemon off;"]
