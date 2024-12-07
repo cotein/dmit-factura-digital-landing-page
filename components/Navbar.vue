@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar" id="navbar" @scroll="handleScroll">
             <div class="container relative flex flex-wrap items-center justify-between">
-                <a class="navbar-brand md:me-8" href="index.html">
+                <a class="navbar-brand md:me-8" href="https://www.dmit.ar">
                     <img src="../assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
                     <img src="../assets/images/logo-light.png" class="hidden dark:inline-block" alt="">
                 </a>
@@ -11,7 +11,7 @@
                     <!-- Navbar Button -->
                     <ul class="list-none menu-social mb-0">
                         <li class="inline">
-                            <a href="http://localhost:5173/auth/login" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
+                            <a href="https://www.dmit.ar/auth/login" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
                         </li>
                     </ul>
                     <!-- Navbar Collapse Manu Button -->

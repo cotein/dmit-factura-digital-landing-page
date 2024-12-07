@@ -9,11 +9,11 @@
                             </a>
                         </div>
 
-                        <div class="lg:col-span-5 text-center mt-6 md:mt-0">
+                        <!-- <div class="lg:col-span-5 text-center mt-6 md:mt-0">
                             <p class="mb-0">© {{date}} Upcover. Design & Develop with <i class="mdi mdi-heart text-red-600"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
-                        </div>
+                        </div> -->
 
-                        <ul class="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
+                        <!-- <ul class="lg:col-span-4 list-none md:text-end text-center mt-6 md:mt-0">
                             <li class="inline"><a href="https://1.envato.market/upcover-nuxt" target="_blank" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="shopping-cart" class="size-4 align-middle" title="Buy Now"></i></a></li>
                             <li class="inline"><a href="https://dribbble.com/shreethemes" target="_blank" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="dribbble" class="size-4 align-middle" title="dribbble"></i></a></li>
                             <li class="inline"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="linkedin" class="size-4 align-middle" title="Linkedin"></i></a></li>
@@ -21,7 +21,8 @@
                             <li class="inline"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="instagram" class="size-4 align-middle" title="instagram"></i></a></li>
                             <li class="inline"><a href="https://twitter.com/shreethemes" target="_blank" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="twitter" class="size-4 align-middle" title="twitter"></i></a></li>
                             <li class="inline"><a href="mailto:support@shreethemes.in" class="size-8 inline-flex justify-center items-center border border-gray-800 rounded-md hover:border-teal-500 dark:hover:border-teal-500 hover:bg-teal-500 dark:hover:bg-teal-500"><i data-feather="mail" class="size-4 align-middle" title="email"></i></a></li>
-                        </ul><!--end icon-->
+                        </ul> -->
+                        <!--end icon-->
                     </div><!--end grid-->
                 </div><!--end container-->
             </div>

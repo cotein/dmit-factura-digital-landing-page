@@ -5,11 +5,11 @@
         <div class="container relative mt-8">
           <div class="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
             <div>
-              <h1 class="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Optimiza tu facturación, 100% online.</h1>
-              <p class="text-slate-400 text-lg max-w-xl">Desde nuestro servicio podrá emitir comprobantes de venta, listarlos, enviarlos por correo electrónico, y más.</p>
+              <h1 class="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Tu sistema de facturación online, confiable y accesible.</h1>
+              <p class="text-slate-400 text-lg max-w-xl">Desde nuestro servicio podrá emitir comprobantes de venta, listarlos, y más.</p>
   
               <div class="mt-6">
-                <a href="http://localhost:5173/auth/register"
+                <a href="https://www.dmit.ar/auth/register"
                   class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Registrarse <i class="mdi mdi-chevron-right ms-1"></i></a>
               </div>
             </div>

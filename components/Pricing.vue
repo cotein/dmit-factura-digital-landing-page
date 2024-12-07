@@ -40,7 +40,7 @@
                             <li class="mb-1 ms-0 flex"><i class="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Hasta 20 facturas mensuales.</span></li>
                             <li class="mb-1 ms-0 flex"><i class="mdi mdi-check-circle-outline text-teal-500 text-[20px] align-middle me-2"></i> <span>Acceso completo a la plataforma.</span></li>
                         </ul>
-                        <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Subscribe Now</a>
+                        <a href="" class="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500/5 hover:bg-teal-500 text-teal-500 hover:text-white w-full mt-5">Suscribirse</a>
                     </div><!--end content-->
 
                     <!-- <div class="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md h-fit">

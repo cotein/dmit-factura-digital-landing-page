@@ -14,7 +14,7 @@
                     <!-- Navbar Button -->
                     <ul class="list-none menu-social mb-0">
                         <li class="inline">
-                            <a href="" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
+                            <a href="https://www.dmit.ar/auth/login" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
                         </li>
                     </ul>
                     <!-- Navbar Collapse Manu Button -->
@@ -27,7 +27,7 @@
                 <!-- Navbar Manu -->
           
                 <div class="navigation lg_992:order-1 lg_992:flex !ms-auto" :class="{hidden: !toggle}" id="menu-collapse" >
-                    <ul class="navbar-nav nav-light sidebar-nav" id="navbar-navlist">
+                    <!-- <ul class="navbar-nav nav-light sidebar-nav" id="navbar-navlist">
                         <li class="nav-item ms-0 active home">
                             <a class="nav-link" href="#home">Home</a>
                         </li>
@@ -48,6 +48,29 @@
                         </li>
                         <li class="nav-item ms-0 contact">
                             <a class="nav-link" href="#contact">Contact us</a>
+                        </li>
+                    </ul> -->
+                    <ul class="navbar-nav nav-light sidebar-nav" id="navbar-navlist">
+                        <li class="nav-item ms-0 active home">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item ms-0 about">
+                            <a class="nav-link" href="#about">Servicio</a>
+                        </li>
+                        <li class="nav-item ms-0 services">
+                            <a class="nav-link" href="#services">Ventajas</a>
+                        </li>
+                        <!-- <li class="nav-item ms-0 review">
+                            <a class="nav-link" href="#review">Testimonial</a>
+                        </li> -->
+                        <li class="nav-item ms-0 pricing">
+                            <a class="nav-link" href="#pricing">Precio</a>
+                        </li>
+                        <!-- <li class="nav-item ms-0 blog">
+                            <a class="nav-link" href="#blog">Blogs</a>
+                        </li> -->
+                        <li class="nav-item ms-0 contact">
+                            <a class="nav-link" href="#contact">Contáctenos</a>
                         </li>
                     </ul>
                 </div>
