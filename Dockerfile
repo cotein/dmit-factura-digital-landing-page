@@ -15,6 +15,7 @@ RUN npm install
 # Copy all files
 COPY . .
 
+#expose port 3000
 EXPOSE 3000
 
 # start nginx in the foreground
