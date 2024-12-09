@@ -15,25 +15,7 @@ RUN npm install
 # Copy all files
 COPY . .
 
-COPY ./ssl-certificates /etc/letsencrypt
-
-# Build app
-RUN npm run build && npm run generate
-
-# nginx state for serving content
-FROM nginx:1.21.1-alpine as production-stage
-
-# remove the default nginx.conf
-RUN rm -rf /usr/share/nginx/html/*
-
-# Copy nginx configuration
-COPY ./nginx/default.conf /etc/nginx/conf.d
-
-# Copy static files from build-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80 443
+EXPOSE 3000
 
 # start nginx in the foreground
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "run", "dev"]
