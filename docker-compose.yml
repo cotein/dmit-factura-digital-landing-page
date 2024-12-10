@@ -1,14 +1,17 @@
-version: '3.1'
+version: '3.8'
 services:
-  web_app:
+  dmit_facturador_landing_page:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: web_app
-    image: web_app
+    container_name: dmit_facturador_landing_page
     restart: always
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      - ./ssl-certificates:/etc/letsencrypt
+    networks:
+      - dmit_network
+
+networks:
+  dmit_network:
+    external: true

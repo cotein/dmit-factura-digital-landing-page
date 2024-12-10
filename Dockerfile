@@ -1,10 +1,10 @@
 # Author : Vongkeo KSV
 
 # Pull the base image 
-FROM node:20.15.0 as build-stage
+FROM node:20.15.0 as builder
 
 # set working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -15,25 +15,20 @@ RUN npm install
 # Copy all files
 COPY . .
 
-COPY ./ssl-certificates /etc/letsencrypt
+# Construir la aplicación Nuxt
+RUN npm run build
 
-# Build app
-RUN npm run build && npm run generate
+# Etapa 2: Configuración de Nginx 
+FROM nginx:1.26.2
 
-# nginx state for serving content
-FROM nginx:1.21.1-alpine as production-stage
+# Copiar archivos de construcción de Nuxt 
+COPY --from=builder /usr/src/app/.output/public /usr/share/nginx/html
 
-# remove the default nginx.conf
-RUN rm -rf /usr/share/nginx/html/*
+# Copiar archivo de configuración de Nginx
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
-# Copy nginx configuration
-COPY ./nginx/default.conf /etc/nginx/conf.d
+# Exponer el puerto 80 
+EXPOSE 80
 
-# Copy static files from build-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
-
-# Expose port 80
-EXPOSE 80 443
-
-# start nginx in the foreground
+# Iniciar Nginx 
 CMD ["nginx", "-g", "daemon off;"]
