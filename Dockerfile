@@ -27,7 +27,7 @@ COPY --from=builder /usr/src/app/.output/public /usr/share/nginx/html
 # Copiar archivo de configuración de Nginx
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
-# Exponer el puerto 80 
+# Exponer el puerto 80 git 
 EXPOSE 80
 
 # Iniciar Nginx 
