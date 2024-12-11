@@ -19,7 +19,7 @@ COPY . .
 RUN npm run build && npm run generate
 
 # Etapa 2: Configuración de Nginx 
-FROM nginx:1.26.2 as production
+FROM nginx:1.21.1-alpine as production
 
 # remove the default nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
