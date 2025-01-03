@@ -5,6 +5,7 @@
     </NuxtLayout>
     <Footer />
     <switcher />
+    <UNotifications />
   </div>
 </template>
 

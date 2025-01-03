@@ -6,10 +6,7 @@ export default defineNuxtConfig( {
     '~/assets/css/materialdesignicons.min.css',
 
   ],
-  modules: [
-    '@nuxtjs/color-mode',
-
-  ],
+  modules: ['@nuxtjs/color-mode', '@nuxt/ui'],
   carousel: {
     prefix: 'MyPrefix'
   },
