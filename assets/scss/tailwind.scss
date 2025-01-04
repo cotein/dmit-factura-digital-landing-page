@@ -6,22 +6,22 @@
    Created: January 2024
    File: Main Css File
 */
+// FONTS
+@use "custom/fonts";
+
+// general
+@use "custom/general";
+
+// structure
+@use "custom/structure/topnav";
+@use "custom/structure/footer";
+
+// pages
+@use "custom/pages/helper";
+@use "custom/pages/swiper-slider";
+@use "custom/pages/contact";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-// FONTS
-@import "custom/fonts";
-
-// general
-@import "custom/general";
-
-// structure
-@import "custom/structure/topnav";
-@import "custom/structure/footer";
-
-// pages
-@import "custom/pages/helper";
-@import "custom/pages/swiper-slider";
-@import "custom/pages/contact";

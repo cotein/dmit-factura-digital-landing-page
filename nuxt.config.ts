@@ -8,6 +8,9 @@ export default defineNuxtConfig( {
 
   ],
   modules: [ '@nuxtjs/color-mode', '@nuxt/ui', "nuxt-og-image" ],
+  build: {
+    transpile: [ 'vue-countup-v3' ],
+  },
   carousel: {
     prefix: 'MyPrefix'
   },

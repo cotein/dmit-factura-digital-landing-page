@@ -49,11 +49,7 @@
     twitterImage: 'https://www.dmit.ar/_nuxt/design-team.C9yaDF-C.svg',
     twitterCard: 'summary'
   })
-  defineOgImageComponent('NuxtSeo', {
-    title: 'Dmit: Facturación en línea fácil y rápida',
-    description: 'Simplifica tus procesos de facturación con Dmit. Software intuitivo y seguro para gestionar tus clientes y pagos',
-    colorMode: 'dark',
-  });
+  
   </script>
   
   <style lang="scss" scoped></style>

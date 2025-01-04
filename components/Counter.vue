@@ -4,6 +4,6 @@
         <p class="text-xl font-bold"><count-up class="counter-value" :end-val="4589"></count-up></p>
     </div>
 </template>
-<script setup >
+<script setup lang="ts">
     import CountUp from 'vue-countup-v3'
 </script>
