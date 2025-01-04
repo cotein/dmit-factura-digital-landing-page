@@ -9,26 +9,16 @@
   </div>
 </template>
 
-<script >
+<script setup lang="ts">
 
-  import feather from 'feather-icons'
-import Footer from './components/Footer.vue'
-import Switcher from '@/components/Switcher.vue'
 
-export default {
-  name: "App",
-  data() {
-    return {
+/* useSeoMeta({
+  title: 'DMIT Facturador Digital',
+  ogTitle: 'DMIT Facturador Digital',
+  description: 'Tu sistema de facturación online, confiable y accesible.',
+  ogDescription: 'Tu sistema de facturación online, confiable y accesible.',
+  ogImage: 'https://www.dmit.ar/_nuxt/design-team.C9yaDF-C.svg',
+  twitterCard: 'summary_large_image',
+}) */
 
-    }
-  },
-   mounted() {
-      feather.replace();
-  },
-  components: {
-    Footer,
-    Switcher,
-  },
- 
-}
 </script>

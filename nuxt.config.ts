@@ -1,12 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig( {
+
   devtools: { enabled: true },
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
 
   ],
-  modules: ['@nuxtjs/color-mode', '@nuxt/ui'],
+  modules: [ '@nuxtjs/color-mode', '@nuxt/ui', "nuxt-og-image" ],
   carousel: {
     prefix: 'MyPrefix'
   },
@@ -46,4 +47,5 @@ export default defineNuxtConfig( {
       autoprefixer: {},
     },
   },
+
 } )

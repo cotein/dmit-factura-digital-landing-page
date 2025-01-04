@@ -45,14 +45,8 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
 
     console.log("🚀 ~ onSubmit ~ data:", data.value)
 
-    if (data.value) {
-        loading.value = false
-        toast.add({
-            title: 'Mensaje enviado exitosamente',
-            description: 'Hemos recibido su consulta a la brevedad nos contactaremos con Ud. Equipo de DMIT.',
-            
-        })
-    }else{
+    if (data.value === null) {
+        //Error interno del servidor. No podemos procesar su solicitud en este momento, por favor intente nuevamente más tarde.
         loading.value = false
         console.log("🚀 ~ onSubmit ~ false:", error)
         toast.add({
@@ -60,8 +54,17 @@ const onSubmit = async (event: FormSubmitEvent<Schema>) => {
             description: 'No se ha podido enviar su consulta.',
             
         })
-        
     }
+    
+    if (data.value) {
+        loading.value = false
+        toast.add({
+            title: 'Mensaje enviado exitosamente',
+            description: 'Hemos recibido su consulta a la brevedad nos contactaremos con Ud. Equipo de DMIT.',
+            
+        })
+    }
+
 
     state.value.comments = ''
     state.value.email = ''

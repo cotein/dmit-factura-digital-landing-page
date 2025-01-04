@@ -36,36 +36,24 @@
     </div>
   </template>
   
-  <script>
-  import Navbar from "../components/Navbar.vue";
-  import About from "../components/About.vue";
-  import Features from '../components/Features.vue';
-  import AgencyTab from '../components/AgencyTab.vue';
-  import Cta from '../components/Cta.vue'
-  import Client from '../components/Client.vue'
-  import Pricing from '../components/Pricing.vue'
-  import Blogs from '../components/Blogs.vue'
-  import GetInTouch from '../components/GetInTouch.vue'
-  export default {
-    name: "IndexPage",
-    data() {
-      return {
+  <script setup lang="ts">
   
-      }
-    },
-    components: {
-      Navbar,
-      About,
-      Features,
-      AgencyTab,
-      Cta,
-      Client,
-      Pricing,
-      Blogs,
-      GetInTouch,
-    }
-  
-  }
+  useSeoMeta({
+    ogTitle: 'Dmit: Facturación en línea fácil y rápida',
+    description: 'Simplifica tus procesos de facturación con Dmit. Software intuitivo y seguro para gestionar tus clientes y pagos',
+    ogDescription: 'Simplifica tus procesos de facturación con Dmit. Software intuitivo y seguro para gestionar tus clientes y pagos',
+    ogImage: 'https://www.dmit.ar/_nuxt/design-team.C9yaDF-C.svg',
+    ogUrl: 'https://www.dmit.ar',
+    twitterTitle: 'Dmit: Facturación en línea fácil y rápida',
+    twitterDescription: 'Simplifica tus procesos de facturación con Dmit. Software intuitivo y seguro para gestionar tus clientes y pagos',
+    twitterImage: 'https://www.dmit.ar/_nuxt/design-team.C9yaDF-C.svg',
+    twitterCard: 'summary'
+  })
+  defineOgImageComponent('NuxtSeo', {
+    title: 'Dmit: Facturación en línea fácil y rápida',
+    description: 'Simplifica tus procesos de facturación con Dmit. Software intuitivo y seguro para gestionar tus clientes y pagos',
+    colorMode: 'dark',
+  });
   </script>
   
   <style lang="scss" scoped></style>
