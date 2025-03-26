@@ -11,7 +11,7 @@
                     <!-- Navbar Button -->
                     <ul class="list-none menu-social mb-0">
                         <li class="inline">
-                            <a href="https://www.facturador.dmit.ar" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
+                            <a href="https://facturador.dmit.ar" class="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white uppercase">Login</a>
                         </li>
                     </ul>
                     <!-- Navbar Collapse Manu Button -->

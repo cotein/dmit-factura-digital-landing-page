@@ -1,19 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig( {
-
   devtools: { enabled: true },
+
   css: [
     '~/assets/scss/tailwind.scss',
     '~/assets/css/materialdesignicons.min.css',
 
   ],
+
   modules: [ '@nuxtjs/color-mode', '@nuxt/ui', "nuxt-og-image" ],
+
   build: {
     transpile: [ 'vue-countup-v3' ],
   },
+
   carousel: {
     prefix: 'MyPrefix'
   },
+
   app: {
     head: {
       title: 'DMIT - Facturación digital',
@@ -44,11 +48,14 @@ export default defineNuxtConfig( {
       ]
     },
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
+  compatibilityDate: '2025-01-04',
 
 } )

@@ -1,7 +1,7 @@
 <template>
     <div>
       <Navbar />
-      <section class="relative overflow-hidden md:py-48 py-40 bg-teal-500/5 dark:bg-teal-500/20" id="home">
+      <section class="relative overflow-hidden md:py-48 py-40 bg-teal-500/5 dark:bg-teal-500/20" id="home" data-aos="fade-down">
         <div class="container relative mt-8">
           <div class="grid md:grid-cols-2 grid-cols-1 gap-6 items-center">
             <div>

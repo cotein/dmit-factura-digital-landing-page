@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="relative md:py-24 py-16" id="blog">
+        <section class="relative md:py-24 py-16" id="blog" >
             <div class="container relative">
                 <div class="grid grid-cols-1 pb-6 text-center">
                     <h3 class="font-semibold text-2xl leading-normal mb-4">Blog or News</h3>
